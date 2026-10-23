@@ -1,9 +1,13 @@
 name: Check translations
 
+# pull_request_target, not pull_request: Crowdin's commits say [ci skip], which stops pull_request runs.
+# It runs the check script from main and only reads the pull request's files, so nothing in a
+# pull request is ever run.
 on:
-  pull_request:
+  pull_request_target:
   push:
     branches: [main]
+  workflow_dispatch:
 
 permissions:
   contents: read
@@ -12,8 +16,17 @@ jobs:
   check:
     runs-on: ubuntu-latest
     steps:
+      # The check script, from main.
       - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      # The files to check: the pull request's, or this branch's when run on a push or by hand.
+      - uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha || github.sha }}
+          path: incoming
+          persist-credentials: false
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - run: node scripts/check.mjs incomming/locales
+      - run: node scripts/check.mjs incoming/locales
