@@ -50,10 +50,12 @@ for (const file of await list(`/projects/${pid}/files`)) {
   if (file.context !== about) await call('PATCH', `/projects/${pid}/files/${file.id}`, replace({ context: about }))
   let changed = 0
   for (const s of await list(`/projects/${pid}/strings?fileId=${file.id}`)) {
-    stringIds.set(s.identifier, s.id)
-    const meta = context.strings[s.identifier]
+    // Crowdin quotes a key with dots in it ("nav.overview"), so it is not read as nested.
+    const key = s.identifier.replace(/^"(.*)"$/, '$1')
+    stringIds.set(key, s.id)
+    const meta = context.strings[key]
     if (!meta) {
-      console.warn(`  ${file.name}: no context for ${s.identifier}; add it to scripts/context.json`)
+      console.warn(`  ${file.name}: no context for ${key}; add it to scripts/context.json`)
       continue
     }
     if (s.context === meta.note && s.maxLength === meta.limit) continue
@@ -78,7 +80,7 @@ for (const [name, keys] of Object.entries(context.screenshots)) {
     ? (await call('PUT', `/projects/${pid}/screenshots/${existing.get(name)}`, { storageId, name })).data.id
     : (await call('POST', `/projects/${pid}/screenshots`, { storageId, name, autoTag: false })).data.id
   const tags = keys.filter((k) => stringIds.has(k)).map((k) => ({ stringId: stringIds.get(k) }))
-  await call('PUT', `/projects/${pid}/screenshots/${id}/tags`, tags)
+  if (tags.length) await call('PUT', `/projects/${pid}/screenshots/${id}/tags`, tags)
   console.log(`${name}: uploaded, ${tags.length} string(s) tagged`)
 }
 const unused = existsSync(shotsDir) ? readdirSync(shotsDir).filter((f) => f.endsWith('.png') && !context.screenshots[f]) : []
