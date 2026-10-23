@@ -1,0 +1,13 @@
+preserve_hierarchy: true
+files:
+  - source: /locales/en-US/*.json
+    translation: /locales/%two_letters_code%/%original_file_name%
+    languages_mapping:
+      two_letters_code:
+        es-ES: es-ES
+        es-419: es-419
+        pt-BR: pt-BR
+        sv-SE: sv-SE
+        zh-CN: zh-CN
+        zh-TW: zh-TW
+        en-GB: en-GB
