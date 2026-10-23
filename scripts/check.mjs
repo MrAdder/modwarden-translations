@@ -5,7 +5,7 @@ import { existsSync, readdirSync, readFileSync } from 'node:fs'
 import { join } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
-const ROOT = fileURLToPath(new URL('../locales/', import.meta.url))
+const ROOT = process.argv[2] ? join(process.cwd(), process.argv[2]) : fileURLToPath(new URL('../locales/', import.meta.url))
 const SOURCE = 'en-US'
 const placeholders = (text) => [...String(text).matchAll(/\{(\w+)\}/g)].map((m) => m[1]).sort()
 
