@@ -2,6 +2,10 @@
 
 Thank you for helping translate ModWarden Suite. The [README](README.md) has the rules and the language codes; this page is how to send your work.
 
+## On Crowdin (recommended)
+
+Translate in your browser at **[crowdin.com/project/modwarden](https://crowdin.com/project/modwarden)**. Choose your language and a file, and translate a string at a time. Nothing to download, and your work comes back to this repo by itself. The rest of this page is only for editing the files directly.
+
 ## On GitHub's website (no tools needed)
 
 1. Open the file you want to translate, for example `locales/fr/bot.json`. If your language has no folder yet, open `locales/en-US/bot.json` instead.

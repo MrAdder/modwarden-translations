@@ -2,7 +2,17 @@
 
 Translations for [ModWarden Suite](https://www.mwsbot.app), the moderation, welcome and safety bot for Discord: the bot's messages and the web panel.
 
-Anyone can help. You don't need to be a developer: if you can edit a text file (or use GitHub's website), you can translate.
+Anyone can help. You don't need to be a developer, or to know GitHub.
+
+## Translate on Crowdin
+
+**The easiest way to help: [crowdin.com/project/modwarden](https://crowdin.com/project/modwarden)**
+
+1. Open the project and sign in (or make a free Crowdin account).
+2. Choose your language, then a file: `bot.json` for what the bot says in Discord, `panel.json` for the web panel.
+3. Translate a string at a time, in your browser. Crowdin shows the English, highlights the `{placeholders}` to keep, and saves as you go.
+
+Your translations come back to this repo by themselves. Please read [the rules](#the-rules) below first; they're also in the project's style guide on Crowdin.
 
 ## What's here
 
@@ -34,14 +44,20 @@ The key (`levels.levelUp`) stays exactly as it is. Only the text after it is tra
 4. **Keep it the same length or close.** Some text appears on buttons and in menus with little room.
 5. **Write the way the bot speaks:** plain, friendly and short. Use the informal "you" where your language has one, unless that would sound rude for a moderation tool.
 
-## Adding a language
+## Your language isn't on Crowdin?
+
+Ask for it: open an issue saying which language you'd like to help with, or ask in the ModWarden Support Discord server, and it will be added to [the Crowdin project](https://crowdin.com/project/modwarden).
+
+## Translating on GitHub instead
+
+If you'd rather edit the files directly, you can:
 
 1. Find your language's code in the table below.
-2. Copy the `locales/en-US` folder and name the copy with that code, for example `locales/fr`.
+2. Copy the `locales/en-US` folder and name the copy with that code, for example `locales/fr`, or edit your language's files if they exist.
 3. Translate the text in each file.
 4. Open a pull request. The check on the pull request tells you if a placeholder went missing or the file isn't valid JSON.
 
-Not sure about GitHub? Open an issue saying which language you'd like to help with, and we'll help you get started.
+Translations made here are picked up by Crowdin too, so the two stay in step. [CONTRIBUTING.md](CONTRIBUTING.md) has the steps.
 
 ## Language codes
 
