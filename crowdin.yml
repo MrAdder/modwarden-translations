@@ -1,13 +1,30 @@
 preserve_hierarchy: true
 files:
   - source: /locales/en-US/*.json
-    translation: /locales/%two_letters_code%/%original_file_name%
+    translation: /locales/%locale%/%original_file_name%
     languages_mapping:
-      two_letters_code:
-        es-ES: es-ES
-        es-419: es-419
-        pt-BR: pt-BR
-        sv-SE: sv-SE
-        zh-CN: zh-CN
-        zh-TW: zh-TW
-        en-GB: en-GB
+      locale:
+        bg: bg
+        cs: cs
+        da: da
+        de: de
+        el: el
+        fi: fi
+        fr: fr
+        hi: hi
+        hr: hr
+        hu: hu
+        id: id
+        it: it
+        ja: ja
+        ko: ko
+        lt: lt
+        nl: nl
+        "no": "no"
+        pl: pl
+        ro: ro
+        ru: ru
+        th: th
+        tr: tr
+        uk: uk
+        vi: vi
