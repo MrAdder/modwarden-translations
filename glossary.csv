@@ -1,0 +1,61 @@
+Term [en],Description [en],Part of Speech [en]
+ModWarden Suite,"The product's name. DO NOT TRANSLATE. Keep exactly as written, with a capital M, W and S.",proper noun
+ModWarden,"Short form of the product's name. DO NOT TRANSLATE.",proper noun
+MWS,"Abbreviation of ModWarden Suite. DO NOT TRANSLATE.",proper noun
+Pro,"The paid plan's name. DO NOT TRANSLATE. Always written Pro, with a capital P.",proper noun
+Free,"The free plan's name, used as a name (the Free plan). Keep it as a name; translate the word free only when it is not the plan's name.",proper noun
+Discord,"The chat app the bot runs in. DO NOT TRANSLATE.",proper noun
+Twitch,"Streaming site. DO NOT TRANSLATE.",proper noun
+Kick,"Streaming site (kick.com), written with a capital K. DO NOT TRANSLATE when it means the site. Not the same as kick, removing a member.",proper noun
+YouTube,"Video site. DO NOT TRANSLATE.",proper noun
+YouTube Live,"YouTube's live streams. DO NOT TRANSLATE.",proper noun
+TikTok,"Video app. DO NOT TRANSLATE.",proper noun
+TikTok LIVE,"TikTok's live streams, written in capitals. DO NOT TRANSLATE.",proper noun
+Reddit,"Website of communities (subreddits). DO NOT TRANSLATE.",proper noun
+RSS,"A kind of web feed. DO NOT TRANSLATE.",proper noun
+mwsbot.app,"The website's address. DO NOT TRANSLATE.",proper noun
+XP,"Experience points members earn by chatting. Keep XP unless your language has a well-known gaming term for it, and then use that everywhere.",noun
+server,"A Discord server (a community). Use the word Discord itself uses in your language, never a word meaning a computer server.",noun
+channel,"A Discord text or voice channel. Use Discord's own word in your language.",noun
+role,"A Discord role, which gives members a colour and permissions. Use Discord's own word in your language.",noun
+member,"Someone in a Discord server. Use Discord's own word in your language.",noun
+ping,"To notify someone by mentioning them or their role, as in Ping this role. Use Discord's word for mention or notify in your language.",verb
+mention,"Naming a member or role in a message with @, which notifies them. Use Discord's own word in your language.",noun
+timeout,"Discord's way of stopping a member from talking for a while. Use Discord's own word in your language.",noun
+kick,"Removing a member from the server; they can rejoin with an invite. Use Discord's own word in your language. Not the streaming site Kick.",verb
+ban,"Removing a member from the server so they cannot rejoin. Use Discord's own word in your language.",verb
+warning,"A note on a member's record that they broke a rule. Several can lead to a timeout or ban.",noun
+Administrator,"Discord's permission that allows everything in a server. Use Discord's own word in your language.",noun
+slash command,"A command members type starting with /, such as /rank. Use Discord's own term in your language. The command names themselves are never translated.",noun
+thread,"A Discord thread: a side conversation under a message. Use Discord's own word in your language.",noun
+embed,"A boxed message the bot posts, with a coloured stripe. If your language has no word for it, describe it as a message box.",noun
+staff,"The people who run and moderate a server: moderators and admins.",noun
+Staff Team,"The name staff replies appear under, so members never see which person answered. Translate as the team, never as one person.",noun
+staff tier,"A level of staff, such as Moderator or Admin, each with its own permissions in the bot.",noun
+moderator,"A staff member who keeps the server safe.",noun
+modmail,"Private conversations between a member and the staff team, held through the bot. Many languages keep the English word.",noun
+appeal,"A member asking for a ban or warning to be looked at again.",noun
+application,"A form a member fills in to ask for something, such as becoming a moderator.",noun
+case,"One moderation action (warning, timeout, kick or ban) with its number, reason and evidence.",noun
+evidence,"Screenshots, messages and notes kept with a case to show why it was taken.",noun
+audit log,"The record of everything that happened in a server and everything staff did.",noun
+panel,"The ModWarden Suite website where staff set the bot up, at mwsbot.app.",noun
+Settings,"The bot's settings for a whole server, changed by its staff. Always this word for Settings, and never the same word as Preferences.",noun
+Preferences,"One staff member's own choices for how the panel looks (colours, text size). Never the same word as Settings.",noun
+level,"A stage members reach by earning XP.",noun
+rank,"A member's position on the server's leaderboard, such as #4.",noun
+rank card,"The image showing a member's level, rank and XP.",noun
+leaderboard,"The list of members with the most XP.",noun
+streak,"How many days in a row a member has chatted.",noun
+Welcomer,"The panel page for welcome and leave messages and welcome cards.",noun
+welcome card,"The image posted when someone joins, with their picture and name.",noun
+giveaway,"A prize draw members enter with a button.",noun
+honeypot,"A trap channel: anyone who posts in it is banned, which catches spam bots and hacked accounts.",noun
+raid,"Many accounts joining at once to spam or disrupt a server.",noun
+lockdown,"Stopping everyone except staff from posting, for a while.",noun
+verification,"New members confirming they are a real person before they can talk.",noun
+spam filter,"The feature that removes spam such as mass mentions and repeated messages.",noun
+auto-responder,"A reply the bot sends when a message matches a trigger.",noun
+reaction roles,"Members giving themselves roles by pressing a button or reaction.",noun
+live alert,"A post in Discord when a streamer goes live.",noun
+feed,"A source of posts (a subreddit or an RSS feed) that the bot announces.",noun

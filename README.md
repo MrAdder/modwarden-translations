@@ -86,6 +86,12 @@ These are the languages Discord itself supports, so the bot can match each membe
 
 The English files grow as more of the bot and panel are made translatable, so expect new keys over time. A language goes live once most of it is translated. Server admins will then be able to choose their server's language in the panel.
 
+## For the maintainer
+
+- **glossary.csv** holds the product's terms. Import it in Crowdin under **Glossary › Import** (the headers are detected), then turn **Translatable** off for the terms marked DO NOT TRANSLATE.
+- **scripts/context.json** holds each file's context, a note and a character limit for every English string, and which screenshot shows which strings. Every English string needs an entry; the check fails without one, and fails any translation over its limit.
+- **screenshots/** holds the pictures listed there. After adding strings or screenshots, send it all to Crowdin with `CROWDIN_TOKEN=... node scripts/crowdin-context.mjs` (a personal access token with the Projects scope, from Crowdin > Account Settings > API).
+
 ## Licence
 
 Translations are under the [MIT licence](LICENSE). By contributing, you agree your translations are released under it, so they can be used in ModWarden Suite, including its paid plan.
